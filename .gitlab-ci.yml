@@ -1,0 +1,13 @@
+image: ghcr.io/astral-sh/uv:python3.12-bookworm
+
+variables:
+  UV_LINK_MODE: copy
+
+stages:
+  - test
+
+sync:
+  stage: test
+  script:
+    - uv sync --frozen
+    - uv run python -c "import torch, torchvision; print(f'torch={torch.__version__}, torchvision={torchvision.__version__}')"
