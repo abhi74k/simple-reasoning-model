@@ -8,3 +8,6 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Downloaded Qwen3 artifacts (fetch with download_qwen3_small)
+qwen3/

@@ -1,0 +1,8 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "jupyter.kernels.excludePythonEnvironments": [
+    "/usr/bin/python3",
+    "/bin/python3",
+    "/home/zeus/miniconda3/envs/cloudspace/bin/python"
+  ]
+}
